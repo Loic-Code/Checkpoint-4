@@ -1,0 +1,26 @@
+{% extends "layout.html.twig" %}
+
+{% block body %}
+	{% include 'includes/_banner.html.twig' %}
+	<section class="container-fluid d-flex justify-content-center my-3 col-11">
+		<img src="{{ asset('build/images/crepe-black.png') }}" width="40" height="40" class="icone-crepe m-3 align-items-center" alt="logo">
+		<h2 class="text-dark">Notre carte</h2>
+	</section>
+	<div class="container">
+		{% include 'home/_carte.html.twig' %}
+	</div>
+	<section class="container-fluid d-flex justify-content-center my-3 col-11 bg-dark width">
+		<img src="{{ asset('build/images/crepe-white.png') }}" width="40" height="40" class="icone-crepe m-3 align-items-center" alt="logo">
+		<h2 class="text-light">Nos services</h2>
+	</section>
+	<section class="container-fluid d-flex justify-content-center my-3 col-11">
+		<img src="{{ asset('build/images/crepe-black.png') }}" width="40" height="40" class="icone-crepe m-3 align-items-center" alt="logo">
+		<h2 class="text-dark">Nos horaires</h2>
+</section>
+<div class="container d-flex justify-content-center">
+{% include 'home/_horaire.html.twig' %}
+</div>
+<section class="container-fluid d-flex justify-content-center my-3 col-11 bg-dark">
+	<img src="{{ asset('build/images/crepe-white.png') }}" width="40" height="40" class="icone-crepe m-3 align-items-center" alt="logo">
+	<h2 class="text-light">Nous Contactez</h2>
+</section>{% endblock %}

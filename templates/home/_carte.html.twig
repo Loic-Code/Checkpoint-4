@@ -1,0 +1,17 @@
+<div class="row row-cols-md-3 g-4 m-4 d-flex justify-content-between">
+	{% for product in products %}
+		<div class="card bg-dark m-1" style="max-width: 540px; min-height: 100px;">
+			<div class="row g-0">
+				<div class="col-md-4">
+					<img src="{{ product.picture }}" class="img-fluid rounded-start h-100" alt="...">
+				</div>
+				<div class="col-md-8">
+					<div class="card-body">
+						<h3 class="card-title text-light text-center mb-5">{{ product.name }}</h3>
+						<p class="card-text text-light text-center">{{ product.description }}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	{% endfor %}
+</div>

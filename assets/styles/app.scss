@@ -1,0 +1,25 @@
+@import "variables.scss";
+@import "~bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+@import "banner.scss";
+
+body {
+    background-color: $light;
+    font-family: "Varela Round", sans-serif;
+    background-color: #fffcfc;
+    background-image: url("https://transparenttextures.com/patterns/inspiration-geometry.png");
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+    font-family: $title;
+}
+
+.title {
+    font-family: $title;
+    margin-bottom: 20px;
+}

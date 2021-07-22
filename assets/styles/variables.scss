@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Amertha';
+    src: url('../fonts/Amertha.ttf');
+}
+
+$dark:#000000;
+$light:#FFFFFF;
+$primary:#c822ed;
+$danger: rgb(177, 21, 21);
+$success:#6bd736;
+
+$theme-colors: (
+    "primary": $primary,
+    "dark": $dark,
+    "light": $light,
+    "danger": $danger,
+    "success": $success
+);
+
+$display-font-sizes: (
+    1: 5rem,
+    2: 4.5rem,
+    3: 4rem,
+    4: 3.5rem,
+    5: 3rem,
+    6: 2.5rem
+);
+
+$title: 'Amertha';
