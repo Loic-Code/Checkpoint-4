@@ -5,16 +5,25 @@
 
 {% block body %}
 	<main class="col-md-10 mx-auto my-5 min-vh-100">
-		<h1 class="text-center text-dark mb-5">Bienvenue dans la section <span class="text-primary">admin</span> !</h1>
+		<h1 class="text-center text-dark mb-5">Bienvenue dans la section
+			<span class="text-primary">admin</span>
+			!</h1>
 		<div class="row align-items-center m-4">
 			<div class="space-card my-3 m-auto border border-dark bg-dark rounded w-75">
 				<div class="card-body bg-dark">
 					<div class="d-flex justify-content-center">
-						<a href="{{ path('product_index') }}" class="btn text-light"><h3>La Carte</h3></a>
+						<a href="{{ path('product_index') }}" class="btn text-light">
+							<h3>La Carte</h3>
+						</a>
 					</div>
 					<p class="card-text text-center text-light m-5">Consulter la carte, éditer et supprimer des plats</p>
 				</div>
 			</div>
+		</div>
+		<div class="d-flex justify-content-center">
+			<button class="btn btn-primary m-2">
+				<a class="text-light" href="{{ path('app_logout')}}">Déconnexion</a>
+			</button>
 		</div>
 	</main>
 {% endblock %}
